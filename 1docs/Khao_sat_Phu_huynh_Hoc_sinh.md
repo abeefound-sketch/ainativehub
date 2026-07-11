@@ -1,95 +1,54 @@
-# Bảng Khảo Sát Toàn Diện & Cá Nhân Hóa (Phụ Huynh - Học Sinh)
+# Bảng Khảo Sát Toàn Diện: Khám Phá Nhu Cầu Phụ Huynh & Học Sinh
 *Khóa học: Private Coach - AI, Vibe Coding & Năng lực số*
 
-> **Mục đích:** Khảo sát đầy đủ các khía cạnh cơ bản (thói quen, kỳ vọng) đồng thời lồng ghép sâu các thông tin cá nhân (sở thích Lego, Guitar, lịch học dày, bối cảnh phòng khám tại nhà) để xây dựng lộ trình học tập sát thực tế nhất.
+> **Nguyên tắc thiết kế:** Đặt câu hỏi mở, gợi mở để phụ huynh và học sinh tự nói ra vấn đề, bối cảnh gia đình, và những mong muốn chưa được nhắc tới. Không mặc định giả định trước hoàn cảnh của họ.
 
 ---
 
-## PHẦN 1: DÀNH CHO MẸ
-*(Giúp định hình kỳ vọng, ranh giới an toàn và phương án phối hợp trong bối cảnh gia đình bận rộn)*
+## PHẦN 1: DÀNH CHO PHỤ HUYNH
+*(Mục tiêu: Đánh giá hiện trạng, thu thập nhu cầu cốt lõi và hiểu rõ điều kiện đồng hành của gia đình)*
 
-### 1. Thông tin cơ bản
-- Họ và tên học sinh: ................................................ Lớp (7/8): ........ Trường: ...........................
-- Số điện thoại/Zalo của mẹ: ......................................................................................................
+### 1. Đánh giá hiện trạng & Thói quen thiết bị
+1. Trung bình mỗi ngày con sử dụng thiết bị điện tử (ngoài giờ học trên lớp) khoảng bao lâu? 
+2. Con thường sử dụng thiết bị vào những mục đích chính nào? (Giải trí, chơi game, học ngoại ngữ, xem mạng xã hội, sáng tạo...)
+3. Gia đình có gặp khó khăn gì trong việc thiết lập giới hạn thời gian sử dụng thiết bị của con không? Theo anh/chị, nguyên nhân chủ yếu là do đâu? (Do con phản ứng mạnh, do bố mẹ bận rộn thiếu thời gian giám sát, hay do chưa có quy định thống nhất?)
+4. Anh/chị phân biệt thế nào giữa việc con dùng máy tính để "học/sáng tạo" và dùng máy tính để "giải trí vô bổ"?
 
-### 2. Đánh giá thói quen sử dụng thiết bị
-1. Theo mẹ, trung bình mỗi ngày con sử dụng thiết bị điện tử (ngoài giờ học) khoảng bao lâu?
-   - [ ] Dưới 1 tiếng
-   - [ ] 1 - 2 tiếng
-   - [ ] 2 - 4 tiếng
-   - [ ] Trên 4 tiếng
-2. Con thường sử dụng thiết bị điện tử vào việc gì nhiều nhất? (Chọn 1-2 ưu tiên)
-   - [ ] Chơi game / Giải trí chung
-   - [ ] Xem video YouTube, TikTok, Mạng xã hội
-   - [ ] Tìm kiếm thông tin học ngoại ngữ (Tiếng Anh, Trung) hoặc học đàn
-   - [ ] Khác: ...................................................................................
+### 2. Khám phá Nhu cầu & Mong muốn sâu xa
+1. Điều gì hoặc sự kiện nào gần đây khiến anh/chị quyết định tìm hiểu một khóa học về AI và công nghệ cho con vào thời điểm này?
+2. Anh/chị lo lắng nhất điều gì khi con tiếp xúc nhiều với môi trường Internet hiện nay?
+3. Ngoài việc cải thiện kỹ năng máy tính, anh/chị có mong muốn khóa học này giúp con thay đổi thói quen hay phát triển thêm kỹ năng mềm nào khác không? (Ví dụ: Sự tập trung, kỷ luật tự giác, khả năng tự học, cách quản lý thời gian...)
+4. Nếu cuối khóa học con tạo ra được một sản phẩm công nghệ, anh/chị mong muốn sản phẩm đó thiên về hướng nào? (Phục vụ trực tiếp cho việc học trên lớp của con, phát triển sở thích cá nhân, hay một ứng dụng thực tế hỗ trợ công việc của gia đình?)
 
-### 3. Bối cảnh gia đình & Quản lý thời gian
-1. Với việc bố thường xuyên vắng nhà và mẹ khá bận rộn với công việc tại phòng khám nha khoa, việc quản lý thời gian sử dụng thiết bị của con hiện tại đang diễn ra thế nào?
-   - [ ] Dùng phần mềm/chế độ giới hạn thiết bị tự động.
-   - [ ] Mẹ kiểm tra chéo khi có thời gian rảnh.
-   - [ ] Con tự giác thực hiện theo cam kết.
-   - [ ] Khó kiểm soát, đôi khi dẫn đến tranh cãi.
-2. Phòng khám nha khoa tại nhà có làm ảnh hưởng đến không gian yên tĩnh và tập trung của con không? Mẹ dự kiến con sẽ ngồi học với Coach ở không gian nào?
-   - ..........................................................................................................................................
-
-### 4. Kỳ vọng Đầu ra & Định hướng Sản phẩm
-1. Động lực lớn nhất khiến mẹ muốn con tham gia khóa học AI & Vibe Coding này là gì?
-   - ..........................................................................................................................................
-2. Sau 2-3 tháng học, mẹ kỳ vọng sự thay đổi lớn nhất ở con là gì?
-   - [ ] Biết dùng AI để tự học, quản lý thời gian tốt hơn.
-   - [ ] Làm ra được một sản phẩm cụ thể.
-   - [ ] Tư duy sử dụng máy tính chuyển từ "tiêu thụ nội dung" sang "sáng tạo nội dung".
-   - [ ] Khác: .....................................................................
-3. **Liên kết sở thích & thực tiễn:** Nếu con làm một sản phẩm công nghệ cuối khóa, mẹ thích hướng nào hơn?
-   - [ ] Hướng sở thích của con (Ví dụ: Ứng dụng tra cứu hợp âm Guitar, thiết kế mô hình Lego 3D).
-   - [ ] Hướng ứng dụng thực tế cho gia đình (Ví dụ: Một Chatbot nhỏ hỗ trợ hỏi đáp giờ làm việc cho phòng khám nha khoa của mẹ).
-   - [ ] Để con tự quyết định 100%.
-
-### 5. Sắp xếp Lịch học
-1. Lịch học của con hiện đang có Ngoại ngữ (Anh, Trung), Đàn Guitar, và Bơi lội. Để con không bị quá tải, mẹ nghĩ khung giờ nào trong tuần con tỉnh táo, vui vẻ và tiếp thu tốt nhất?
-   - ..........................................................................................................................................
-2. Mẹ mong muốn nhận báo cáo tiến độ học tập của con theo hình thức nào?
-   - [ ] Tin nhắn Zalo ngắn gọn sau mỗi buổi.
-   - [ ] Báo cáo tổng hợp vào cuối mỗi tuần/tháng.
+### 3. Bối cảnh gia đình & Điều kiện đồng hành
+1. Trong gia đình, ai là người thường xuyên trao đổi và sát sao với việc học của con nhất? 
+2. Tính chất công việc của anh/chị có ảnh hưởng nhiều đến quỹ thời gian đồng hành cùng con vào buổi tối hoặc cuối tuần không? 
+3. Không gian sinh hoạt ở nhà hiện tại có đảm bảo sự yên tĩnh tối đa cho con khi học trực tuyến không? (Có bị ảnh hưởng bởi công việc kinh doanh tại nhà, người ra vào, hay tiếng ồn không?)
+4. Ngoài giờ học chính khóa, con có đang tham gia các hoạt động ngoại khóa nào khác không (thể thao, năng khiếu, ngoại ngữ...)? Khung giờ nào trong tuần con thường ở trạng thái thể chất và tinh thần tốt nhất?
 
 ---
 
 ## PHẦN 2: DÀNH CHO HỌC SINH
-*(Khảo sát này không có đúng/sai, giúp Thầy/Cô thiết kế các bài thực hành dựa trên chính sở thích của con)*
+*(Mục tiêu: Khai thác sở thích ẩn, thói quen học tập và động lực cá nhân của con)*
 
-### 1. Khám phá Thế giới của con
-1. Trong lúc rảnh rỗi ngoài giờ học, con thích làm gì nhất trên máy tính/điện thoại?
-   - ..........................................................................................................................................
-2. Khi chơi Lego, con thuộc "team" nào dưới đây?
-   - [ ] Thích lắp chính xác từng bước theo sách hướng dẫn.
-   - [ ] Thích tự thiết kế, "phá cách" ghép thành mô hình theo tưởng tượng của mình.
-3. Khi tập Guitar, con thường tự tập, lên mạng xem hướng dẫn hay chờ giáo viên nhắc nhở?
-   - ..........................................................................................................................................
+### 1. Khám phá Thế giới cá nhân & Đam mê
+1. Ngoài giờ học trên lớp, con thường dành nhiều thời gian nhất cho những hoạt động hay sở thích nào? (Kể cả các môn thể thao, nhạc cụ, game, hay sở thích sưu tầm...)
+2. Có sở thích hay đam mê nào con rất thích tìm hiểu nhưng ít khi chia sẻ với bố mẹ không?
+3. Khi làm một việc mình thực sự thích (như qua một màn game khó, hay lắp ráp xong một mô hình phức tạp), con thường thích làm một mình hay muốn chia sẻ/làm chung với ai?
 
-### 2. Trải nghiệm Công nghệ & AI
-1. Con đã từng tự làm một sản phẩm nào trên máy tính chưa? (Ví dụ: slide thuyết trình đẹp, chỉnh video, hay ráp code block Scratch...)
-   - ..........................................................................................................................................
-2. Con đã từng nghe hoặc dùng thử ChatGPT hay các công cụ AI khác chưa? (Nếu có, con hay dùng để làm gì?)
-   - ..........................................................................................................................................
-3. Con đang học cả Tiếng Anh và Tiếng Trung. Nếu dùng AI (như ChatGPT), con thấy tự tin dùng tiếng nào để "ra lệnh" cho nó nhất?
-   - [ ] Tiếng Việt
-   - [ ] Tiếng Anh
-   - [ ] Tiếng Trung
+### 2. Trải nghiệm Công nghệ & Động lực tự thân
+1. Con đã từng dùng máy tính để tự làm ra một sản phẩm nào mang dấu ấn cá nhân của mình chưa? (Ví dụ: một video TikTok vui nhộn, một slide thuyết trình đẹp mắt, ảnh chế, hay một đoạn lập trình ngắn...)
+2. Con đã biết đến hoặc sử dụng các công cụ AI (như ChatGPT) bao giờ chưa? Nếu có, con thường nhờ AI giúp mình việc gì?
+3. Trong các môn học ở trường hoặc khi học ngoại ngữ, con cảm thấy mình hay gặp rắc rối ở khâu nào nhất (việc ghi nhớ từ mới, hay quên làm bài tập, hay khó tập trung...)? Con nghĩ máy tính/AI có thể giúp mình giải quyết vấn đề đó không?
 
-### 3. Động lực học tập & Ý tưởng sáng tạo
-1. Nếu bây giờ được dùng AI và lập trình để tạo ra một "siêu phẩm", con thích làm cái nào hơn?
-   - [ ] Một Website chia sẻ các bản cover Guitar của riêng con.
-   - [ ] Một công cụ AI tự tạo ra các bản tab hợp âm mới.
-   - [ ] Dùng AI vẽ và lên ý tưởng cho một bộ Lego khổng lồ chưa từng có.
-   - [ ] Một con Chatbot xịn xò để nói chuyện với bạn bè.
-   - [ ] Khác: ........................................................................................................................
-2. Lịch học của con khá bận (Đàn, Bơi, Ngoại ngữ). Con có muốn Thầy/Cô chỉ cách dùng AI để tự tạo một bảng thời khóa biểu "cực ngầu" nhắc việc mỗi ngày để con đỡ mệt không?
-   - [ ] Có, con rất cần!
-   - [ ] Không sao, con tự quản lý được.
-3. Khi gặp một vấn đề khó, con thích học theo cách nào nhất?
-   - [ ] Thầy/Cô chỉ từng bước một thật rõ ràng.
-   - [ ] Thầy/Cô đưa ra một gợi ý nhỏ, con sẽ tự "mày mò", nếu kẹt quá mới hỏi.
-   - [ ] Vừa học vừa làm ra một sản phẩm cụ thể.
-4. Khi học online tại nhà, con thường ngồi ở đâu để được yên tĩnh nhất (không bị ảnh hưởng bởi người bệnh đến phòng khám của mẹ)?
-   - ..........................................................................................................................................
+### 3. Ý tưởng Sáng tạo & Phong cách học
+1. Nếu có một "đũa phép" biến mọi ý tưởng công nghệ thành hiện thực, con muốn tạo ra thứ gì nhất lúc này?
+   - [ ] Một trò chơi điện tử do chính con thiết kế.
+   - [ ] Một trang web/kênh riêng để lưu trữ và khoe những sở thích của con (âm nhạc, Lego, thể thao...).
+   - [ ] Một công cụ AI thông minh giúp bố mẹ làm việc hoặc giúp con tự động sắp xếp lịch học.
+   - [ ] Ý tưởng khác: ............................................................................................................
+2. Khi đứng trước một thử thách mới hoặc một bài toán khó, con thích được hỗ trợ theo cách nào nhất?
+   - [ ] Thầy/Cô hướng dẫn từng bước nhỏ từ đầu đến cuối.
+   - [ ] Thầy/Cô chỉ đưa ra gợi ý, con muốn tự mày mò trải nghiệm, sai mới hỏi.
+   - [ ] Vừa học vừa bắt tay vào làm một sản phẩm thực tế luôn.
+3. Khi cần tập trung tuyệt đối để làm bài tập hoặc học online ở nhà, con thường chọn ngồi ở góc nào? Không gian đó có đủ yên tĩnh và giúp con không bị phân tâm không?
