@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giáo Trình Buổi 1 - Diệp Tùng Linh</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-1: #3b82f6;
+            --accent-2: #8b5cf6;
+            --accent-gradient: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 2rem;
+            min-height: 100vh;
+            background-image: radial-gradient(circle at 15% 50%, rgba(59, 130, 246, 0.15), transparent 25%),
+                              radial-gradient(circle at 85% 30%, rgba(139, 92, 246, 0.15), transparent 25%);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            font-weight: 300;
+        }
+
+        .card {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeInUp 0.8s ease-out both;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .card:nth-child(2) { animation-delay: 0.1s; }
+        .card:nth-child(3) { animation-delay: 0.2s; }
+        .card:nth-child(4) { animation-delay: 0.3s; }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        h2::before {
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 24px;
+            background: var(--accent-gradient);
+            border-radius: 4px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin-left: 1rem;
+        }
+
+        li {
+            position: relative;
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+        }
+
+        li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: var(--accent-1);
+            font-weight: bold;
+            font-size: 1.2rem;
+            line-height: 1.4;
+        }
+        
+        li ul {
+            margin-top: 0.5rem;
+            margin-left: 0.5rem;
+        }
+        
+        li ul li::before {
+            content: '•';
+            color: var(--accent-2);
+        }
+
+        .highlight {
+            background: rgba(59, 130, 246, 0.1);
+            padding: 0.2rem 0.6rem;
+            border-radius: 6px;
+            color: #60a5fa;
+            font-weight: 600;
+            border: 1px solid rgba(96, 165, 250, 0.2);
+        }
+
+        .card-img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .btn-print {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 320px;
+            margin: 3rem auto;
+            padding: 1.2rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+            color: #fff;
+            background: var(--accent-gradient);
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .btn-print:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 15px 35px rgba(59, 130, 246, 0.6);
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* PRINT STYLES - Giữ nguyên màu nền Dark Mode khi in */
+        @media print {
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                color-adjust: exact !important;
+            }
+            body {
+                padding: 0;
+            }
+            .container {
+                max-width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            .card {
+                page-break-inside: avoid;
+                margin-bottom: 2rem;
+            }
+            .btn-print {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Buổi 1: Mindset & Setup Môi Trường Làm Việc</h1>
+        <div class="subtitle">Giáo trình Private Coaching | Học viên: Diệp Tùng Linh</div>
+    </header>
+
+    <div class="card">
+        <h2>1. Mục Tiêu Buổi Học</h2>
+        <ul>
+            <li>Hiểu & Setup <span class="highlight">Second Brain</span> (Bộ não số).</li>
+            <li>Đổi Mindset: Từ <span class="highlight">Consumer</span> sang <span class="highlight">Creator</span>.</li>
+            <li>Tạo vốn dữ liệu để build AI Chatbot sau này.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>2. Setup "Second Brain" bằng Obsidian / Logseq</h2>
+        <img src="img/second_brain.jpg" alt="Second Brain Concept" class="card-img" />
+        <p style="margin-bottom: 1.5rem; color: var(--text-muted); font-style: italic;">
+            "Não để sáng tạo, không phải để nhớ."
+        </p>
+        <ul>
+            <li><strong>Cài đặt Obsidian:</strong> Tạo Vault <code>Second_Brain_TungLinh</code>.</li>
+            <li><strong>Markdown cơ bản:</strong> Ghi chú siêu tốc với <code># Header</code>, <code>**Bold**</code>, <code>[Link]()</code>.</li>
+            <li><strong>Cấu trúc thư mục:</strong>
+                <ul>
+                    <li>📁 <code>01_Hoc_Tap</code> (Ôn thi lớp 10, HSK4)</li>
+                    <li>📁 <code>02_So_Thich</code> (Guitar, Cờ vua, Cầu lông)</li>
+                    <li>📁 <code>03_Du_An</code> (YouTube, Chatbot)</li>
+                </ul>
+            </li>
+            <li><strong>Thực hành:</strong> Import ngay file Profile <code>.md</code> vào Obsidian.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>3. Thỏa thuận "Luật Chơi": Consumer Mode vs Creator Mode</h2>
+        <img src="img/creator_vs_consumer.jpg" alt="Creator vs Consumer Mode" class="card-img" />
+        <ul>
+            <li><strong>Consumer (Tiêu thụ):</strong> Lướt mạng xã hội thụ động -> Tốn thời gian, cạn năng lượng.</li>
+            <li><strong>Creator (Sáng tạo):</strong> Dùng máy tính để tạo kịch bản, làm nhạc, lập trình -> <span class="highlight">Tạo tài sản số</span>.</li>
+            <li><strong>Luật Cân Bằng 1:1:</strong> 1 giờ chơi game = 1 giờ làm việc với AI (ví dụ: tạo flashcard HSK4).</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>4. Bài Tập Về Nhà (Action Items)</h2>
+        <ul>
+            <li>Tạo <strong>3 note mới</strong> trong Obsidian: Hợp âm Guitar, Chiến thuật Cờ vua, và Từ vựng HSK4.</li>
+            <li>Ghi file <code>Nhat_ky_Thoi_gian.md</code>: Tổng kết số giờ ở <em>Consumer Mode</em> vs <em>Creator Mode</em> hôm nay.</li>
+        </ul>
+    </div>
+
+    <button class="btn-print" onclick="window.print()">
+        <svg style="width:24px;height:24px;margin-right:10px;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+        Lưu Thành PDF (In Giáo Trình)
+    </button>
+</div>
+
+</body>
+</html>
