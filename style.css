@@ -1722,6 +1722,108 @@ td.td-bespoke {
   margin-top: 4px;
 }
 
+/* Lead Mentor Identity & QR Badge */
+.mentor-card {
+  margin-top: 24px;
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  backdrop-filter: blur(14px);
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 640px) {
+  .mentor-card {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.mentor-qr-wrap {
+  width: 120px;
+  height: 120px;
+  min-width: 120px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 1px solid var(--line-cyan);
+  background: #FFFFFF;
+  padding: 6px;
+  box-shadow: 0 8px 24px rgba(34, 211, 238, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s var(--ease), box-shadow 0.3s;
+}
+
+.mentor-qr-wrap:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 32px rgba(34, 211, 238, 0.3);
+}
+
+.mentor-qr-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.mentor-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.mentor-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.mentor-badge i {
+  color: var(--gold);
+}
+
+.mentor-name {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mentor-name .verified-check {
+  color: var(--cyan);
+  font-size: 0.9rem;
+}
+
+.mentor-role {
+  font-size: 0.8rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.mentor-hint {
+  font-size: 0.74rem;
+  color: var(--cyan);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 4px;
+}
+
 .reg-card {
   background: rgba(11, 16, 32, 0.85);
   border: 1px solid var(--line2);
