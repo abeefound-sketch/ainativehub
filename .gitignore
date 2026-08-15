@@ -7,3 +7,6 @@ node_modules/
 dist/
 .vscode/
 .idea/
+# Google Cloud Service Account Keys
+*.json
+!package.json
