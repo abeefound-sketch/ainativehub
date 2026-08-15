@@ -1,8 +1,15 @@
 # Danh sách liên kết (Links) quan trọng của dự án
 
-Danh sách này lưu trữ các liên kết tới biểu mẫu, tài nguyên bên ngoài để tiện tra cứu trong quá trình triển khai dự án.
+> File này đồng bộ và liên kết tới sổ tay trung tâm tại [`2data/Quan_Ly_Links_Bieu_Mau.md`](file:///D:/5Projects/ainativehub/2data/Quan_Ly_Links_Bieu_Mau.md).
 
-## 1. Khảo sát Nhu cầu Phụ huynh & Học sinh (Cập nhật - Bản chuẩn)
-- **Link chỉnh sửa (Dành cho Giáo viên/Coach):** [Mở Google Forms Edit Mode](https://docs.google.com/forms/d/1d3EnJ8GyvOFZ9cVW3W9svqmeSKy87EU9tBjgHUrFBF0/edit)
-- **Link khảo sát (Gửi cho Phụ huynh & Học sinh):** [Mở Google Forms View Mode](https://docs.google.com/forms/d/1d3EnJ8GyvOFZ9cVW3W9svqmeSKy87EU9tBjgHUrFBF0/viewform)
-- **Tài liệu câu hỏi SOT gốc:** [1docs/Khao_sat_Phu_huynh_Hoc_sinh.md](file:///D:/5Projects/ainativehub/1docs/Khao_sat_Phu_huynh_Hoc_sinh.md)
+## 1. Biểu Mẫu Khảo Sát & Tuyển Sinh May Đo (Mới Nhất)
+- **Link khảo sát (Gửi cho Phụ huynh & Khách hàng):**  
+  [https://docs.google.com/forms/d/e/1FAIpQLSeMqolNsCzGublfuKea-kJHZtuSYxEqJkZFwyqN5sgVIZl41Q/viewform](https://docs.google.com/forms/d/e/1FAIpQLSeMqolNsCzGublfuKea-kJHZtuSYxEqJkZFwyqN5sgVIZl41Q/viewform)
+- **Link Google Sheet Quản Lý Câu Trả Lời (Responses):**  
+  [https://docs.google.com/spreadsheets/d/18fgBwb1GSrS35PM3U2EsOFVxroazZirLnctlRauCeHE/edit](https://docs.google.com/spreadsheets/d/18fgBwb1GSrS35PM3U2EsOFVxroazZirLnctlRauCeHE/edit)
+- **Link chỉnh sửa Form (Coach Only):**  
+  [https://docs.google.com/forms/d/1LgECiqYYXlGMTnLqH-1zI450QLp64weV_7hJo1sX_Uk/edit](https://docs.google.com/forms/d/1LgECiqYYXlGMTnLqH-1zI450QLp64weV_7hJo1sX_Uk/edit)
+
+## 2. Hệ Thống & Website
+- **Website Live:** [https://abeefound-sketch.github.io/ainativehub/](https://abeefound-sketch.github.io/ainativehub/)
+- **GitHub Repository:** [https://github.com/abeefound-sketch/ainativehub](https://github.com/abeefound-sketch/ainativehub)
