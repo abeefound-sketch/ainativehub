@@ -1,17 +1,18 @@
-# AINativeHub Project
+# AI Native Hub — Private Coaching Academy
 
-Project này là gì?
-- Đây là thư mục dự án (nằm trong D:\5Projects\) dành cho AINativeHub.
+Dự án này là kho lưu trữ toàn bộ mã nguồn Website hiển thị công khai, hệ thống tự động hóa (Automations), kịch bản chốt sales, và giáo án giảng dạy 1 kèm 1 cho học viện AI Native Hub.
 
-Mục tiêu hiện tại là gì?
-- Phỏng vấn, thiết kế khóa học Private Coach về AI, Vibe Coding và năng lực số cho học sinh.
+## 🧭 Hướng Dẫn Sử Dụng Repo (Nguồn Sự Thật - SSoT)
 
-SOT/decision quan trọng nằm ở đâu?
-- Tại thư mục `1docs/` (chứa quyết định, spec, runbook, quy chuẩn đã chốt).
+Cấu trúc thư mục của dự án đã được chuyển đổi sang chuẩn **Monorepo**. Để xem chi tiết bản đồ hướng dẫn tìm kiếm các file cũ (Syllabus, Sales Kit, Scripts...) đã được chuyển đi đâu, vui lòng đọc tài liệu Nguồn Sự Thật (SSoT) tại:
 
-Cách test/chạy/checkpoint là gì?
-- Sẽ cập nhật sau theo tiến độ dự án.
+👉 **[`5_Knowledge_Base/SSOT_Ban_Do_Du_An.md`](./5_Knowledge_Base/SSOT_Ban_Do_Du_An.md)**
 
-Điều gì không được làm?
-- Không thay đổi các quy chuẩn trong `D:\1docs`.
-- Không loại bỏ `.m/`, `*.db`, `*.log`, `*.csv`, `*.xlsx` khỏi `.gitignore`.
+---
+
+### Tóm tắt kiến trúc 5 Lớp:
+1. **Root (`./`)**: Mã nguồn website `index.html`, `style.css` và ảnh `assets/` (phục vụ tự động Deploy qua GitHub Pages).
+2. **`1_Business_Operations/`**: Kịch bản sales, báo giá, hệ tư tưởng.
+3. **`2_Coaching_Academy/`**: Giáo trình giảng dạy, hồ sơ cá nhân học viên (K12, Sinh viên, Người đi làm).
+4. **`3_Tech_And_Automations/`**: Script kéo Data khách hàng, tạo Google Form tự động.
+5. **`4_Media_And_Content/`** & **`5_Knowledge_Base/`**: Nguồn lưu trữ tài nguyên truyền thông và kho tri thức / prompt.
