@@ -216,29 +216,36 @@ html[lang="zh"] span.zh-inline { display: inline; }
 }
 
 .brand-mark {
-  width: 36px;
-  height: 36px;
+  width: 38px;
+  height: 38px;
   border-radius: 10px;
-  background: conic-gradient(from 0deg, var(--gold), var(--emerald), var(--cyan), var(--gold));
-  display: grid;
-  place-items: center;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(250, 204, 21, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  box-shadow: 0 4px 20px rgba(250, 204, 21, 0.3);
+  box-shadow: 0 4px 18px rgba(250, 204, 21, 0.2);
+  transition: transform 0.3s var(--ease), border-color 0.3s, box-shadow 0.3s;
+  backdrop-filter: blur(10px);
+  flex-shrink: 0;
 }
 
-.brand-mark::after {
-  content: '';
-  position: absolute;
-  inset: 2px;
-  background: var(--void);
-  border-radius: 8px;
+.brand:hover .brand-mark {
+  transform: scale(1.08) rotate(3deg);
+  border-color: var(--cyan);
+  box-shadow: 0 6px 24px rgba(34, 211, 238, 0.35);
 }
 
-.brand-mark i {
-  position: relative;
-  z-index: 1;
-  font-size: 0.85rem;
-  color: var(--gold);
+.brand-mark .nexus-svg {
+  width: 28px;
+  height: 28px;
+  display: block;
+  transition: transform 0.4s var(--ease);
+}
+
+.brand:hover .brand-mark .nexus-svg {
+  transform: rotate(-6deg);
 }
 
 .brand-text strong {
