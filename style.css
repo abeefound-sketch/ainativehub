@@ -1725,13 +1725,15 @@ td.td-bespoke {
 /* Lead Mentor Identity & QR Badge */
 .mentor-card {
   margin-top: 24px;
-  padding: 18px;
-  background: rgba(255, 255, 255, 0.03);
+  padding: 22px 18px;
+  background: rgba(255, 255, 255, 0.04);
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  align-items: center;
+  text-align: center;
+  gap: 18px;
   backdrop-filter: blur(14px);
   position: relative;
   overflow: hidden;
@@ -1741,41 +1743,61 @@ td.td-bespoke {
   .mentor-card {
     flex-direction: row;
     align-items: center;
-    gap: 20px;
+    text-align: left;
+    gap: 22px;
   }
 }
 
 .mentor-qr-wrap {
-  width: 120px;
-  height: 120px;
-  min-width: 120px;
-  border-radius: var(--radius-sm);
+  width: 180px;
+  height: 180px;
+  min-width: 180px;
+  border-radius: var(--radius-md);
   overflow: hidden;
-  border: 1px solid var(--line-cyan);
+  border: 2px solid rgba(34, 211, 238, 0.4);
   background: #FFFFFF;
-  padding: 6px;
-  box-shadow: 0 8px 24px rgba(34, 211, 238, 0.15);
+  padding: 8px;
+  box-shadow: 0 12px 36px rgba(34, 211, 238, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.3s var(--ease), box-shadow 0.3s;
+  transition: transform 0.3s var(--ease), box-shadow 0.3s, border-color 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media (min-width: 640px) {
+  .mentor-qr-wrap {
+    width: 140px;
+    height: 140px;
+    min-width: 140px;
+  }
 }
 
 .mentor-qr-wrap:hover {
-  transform: scale(1.05);
-  box-shadow: 0 12px 32px rgba(34, 211, 238, 0.3);
+  transform: scale(1.04);
+  border-color: var(--cyan);
+  box-shadow: 0 16px 44px rgba(34, 211, 238, 0.35);
 }
 
 .mentor-qr-wrap img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  border-radius: 4px;
 }
 
 .mentor-info {
   display: flex;
   flex-direction: column;
   gap: 6px;
+  align-items: center;
+}
+
+@media (min-width: 640px) {
+  .mentor-info {
+    align-items: flex-start;
+  }
 }
 
 .mentor-badge {
@@ -1783,7 +1805,7 @@ td.td-bespoke {
   align-items: center;
   gap: 6px;
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-size: 0.7rem;
   font-weight: 700;
   color: var(--gold);
   text-transform: uppercase;
@@ -1796,7 +1818,7 @@ td.td-bespoke {
 
 .mentor-name {
   font-family: var(--font-heading);
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   font-weight: 800;
   color: #FFFFFF;
   display: flex;
@@ -1806,22 +1828,27 @@ td.td-bespoke {
 
 .mentor-name .verified-check {
   color: var(--cyan);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
 
 .mentor-role {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   color: var(--muted);
-  line-height: 1.45;
+  line-height: 1.5;
 }
 
 .mentor-hint {
-  font-size: 0.74rem;
+  font-size: 0.78rem;
   color: var(--cyan);
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 6px;
-  margin-top: 4px;
+  margin-top: 6px;
+  background: rgba(34, 211, 238, 0.08);
+  padding: 5px 12px;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(34, 211, 238, 0.25);
+  font-weight: 600;
 }
 
 .reg-card {
