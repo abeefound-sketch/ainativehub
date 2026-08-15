@@ -10,9 +10,11 @@ from google.oauth2.service_account import Credentials
 # AI NATIVE HUB — HỆ THỐNG TỰ ĐỘNG ĐỒNG BỘ LEADS & MAY ĐO HỒ SƠ HỌC VIÊN
 # ==============================================================================
 
-CREDENTIALS_FILE = "ainativehub-4e06928576b5.json"
+# Dùng đường dẫn tương đối so với vị trí hiện tại của script (Automations/)
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+CREDENTIALS_FILE = os.path.join(BASE_DIR, "ainativehub-4e06928576b5.json")
 SPREADSHEET_ID = "18fgBwb1GSrS35PM3U2EsOFVxroazZirLnctlRauCeHE"
-LEADS_DATA_DIR = "2data/leads"
+LEADS_DATA_DIR = os.path.join(BASE_DIR, "1_Business_Operations", "Sales_And_CRM", "Leads")
 
 SCOPES = [
     "https://www.googleapis.com/auth/spreadsheets",
