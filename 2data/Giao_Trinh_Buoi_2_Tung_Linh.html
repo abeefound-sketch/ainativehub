@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giáo Trình Buổi 2 - Diệp Tùng Linh</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-1: #3b82f6;
+            --accent-2: #8b5cf6;
+            --accent-gradient: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+            --error-color: #ef4444;
+            --success-color: #10b981;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 2rem;
+            min-height: 100vh;
+            background-image: radial-gradient(circle at 15% 50%, rgba(59, 130, 246, 0.15), transparent 25%),
+                              radial-gradient(circle at 85% 30%, rgba(139, 92, 246, 0.15), transparent 25%);
+        }
+
+        .container { max-width: 900px; margin: 0 auto; }
+
+        header { text-align: center; margin-bottom: 3rem; animation: fadeInDown 0.8s ease-out; }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle { font-size: 1.1rem; color: var(--text-muted); font-weight: 300; }
+
+        .card {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeInUp 0.8s ease-out both;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .card:nth-child(2) { animation-delay: 0.1s; }
+        .card:nth-child(3) { animation-delay: 0.2s; }
+        .card:nth-child(4) { animation-delay: 0.3s; }
+        .card:nth-child(5) { animation-delay: 0.4s; }
+
+        h2 { font-size: 1.5rem; font-weight: 600; margin-bottom: 1.2rem; display: flex; align-items: center; gap: 0.5rem; }
+        h2::before { content: ''; display: inline-block; width: 8px; height: 24px; background: var(--accent-gradient); border-radius: 4px; }
+
+        ul { list-style-type: none; margin-left: 1rem; }
+        li { position: relative; margin-bottom: 1rem; padding-left: 1.5rem; }
+        li::before { content: '▹'; position: absolute; left: 0; color: var(--accent-1); font-weight: bold; font-size: 1.2rem; line-height: 1.4; }
+        
+        li ul { margin-top: 0.5rem; margin-left: 0.5rem; }
+        li ul li::before { content: '•'; color: var(--accent-2); }
+
+        .highlight {
+            background: rgba(59, 130, 246, 0.1);
+            padding: 0.2rem 0.6rem;
+            border-radius: 6px;
+            color: #60a5fa;
+            font-weight: 600;
+            border: 1px solid rgba(96, 165, 250, 0.2);
+        }
+
+        .card-img {
+            width: 100%; height: auto; border-radius: 12px; margin-bottom: 1.5rem;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .prompt-box {
+            background: rgba(0, 0, 0, 0.3);
+            border-left: 4px solid var(--accent-2);
+            padding: 1.2rem;
+            border-radius: 0 8px 8px 0;
+            margin: 1rem 0;
+            font-family: monospace;
+            font-size: 1rem;
+            color: #e2e8f0;
+        }
+
+        .prompt-bad { border-left-color: var(--error-color); }
+        .prompt-good { border-left-color: var(--success-color); }
+        
+        .badge {
+            display: inline-block; padding: 0.2rem 0.5rem; border-radius: 4px;
+            font-size: 0.8rem; font-weight: bold; margin-bottom: 0.5rem; text-transform: uppercase;
+        }
+        .badge-error { background: rgba(239, 68, 68, 0.2); color: var(--error-color); }
+        .badge-success { background: rgba(16, 185, 129, 0.2); color: var(--success-color); }
+
+        .btn-print {
+            display: flex; align-items: center; justify-content: center; width: 100%; max-width: 320px;
+            margin: 3rem auto; padding: 1.2rem; font-size: 1.1rem; font-weight: 600; font-family: 'Inter', sans-serif;
+            color: #fff; background: var(--accent-gradient); border: none; border-radius: 30px;
+            cursor: pointer; box-shadow: 0 10px 25px rgba(59, 130, 246, 0.4); transition: all 0.3s ease;
+        }
+        .btn-print:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 15px 35px rgba(59, 130, 246, 0.6); }
+
+        @keyframes fadeInDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* PRINT STYLES - Giữ nguyên màu nền Dark Mode khi in */
+        @media print {
+            * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; color-adjust: exact !important; }
+            body { padding: 0; }
+            .container { max-width: 100%; margin: 0; padding: 0; }
+            .card { page-break-inside: avoid; margin-bottom: 2rem; }
+            .btn-print { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Buổi 2: Nghệ thuật "Ra Lệnh" cho AI</h1>
+        <div class="subtitle">Prompt Engineering Cơ Bản | Học viên: Diệp Tùng Linh</div>
+    </header>
+
+    <div class="card">
+        <h2>1. Mục Tiêu Buổi Học</h2>
+        <ul>
+            <li>Nắm vững công thức Vàng để giao tiếp chính xác với mọi loại AI (ChatGPT, Claude, Gemini).</li>
+            <li>Chấm dứt việc đặt câu hỏi "cộc lốc" khiến AI trả lời chung chung, sáo rỗng.</li>
+            <li>Hiểu được file <span class="highlight">Hồ sơ Cá nhân</span> chính là một "Siêu Prompt" (System Prompt) để lập trình AI.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>2. Cốt Lõi Của Prompt Engineering</h2>
+        <img src="img/prompt_engineering.jpg" alt="Prompt Engineering Concept" class="card-img" />
+        <p style="margin-bottom: 1.5rem; color: var(--text-muted); font-style: italic;">
+            "AI giống như một vị thần đèn siêu việt nhưng bị mù. Nếu bạn chỉ sai đường, nó sẽ chạy thục mạng về hướng sai."
+        </p>
+        <p style="margin-bottom: 1rem;">Công thức CTF (Context - Task - Format) siêu ngắn gọn:</p>
+        <ul>
+            <li><strong>C (Context - Bối cảnh):</strong> Cho AI biết mình là ai, hoàn cảnh là gì. <br><em>VD: "Tôi là Tùng Linh, học sinh lớp 9 chuẩn bị thi lên 10..."</em></li>
+            <li><strong>T (Task - Nhiệm vụ):</strong> Ra lệnh cụ thể AI phải làm gì. <br><em>VD: "Hãy lập cho tôi một thời gian biểu ôn tập Toán, Văn, Anh..."</em></li>
+            <li><strong>F (Format - Định dạng):</strong> Yêu cầu kết quả trả về theo hình thức nào. <br><em>VD: "Trình bày dưới dạng bảng lịch trình từng ngày."</em></li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>3. Thực Hành So Sánh</h2>
+        
+        <div style="margin-bottom: 2rem;">
+            <span class="badge badge-error">Sai Lầm (Prompt Cộc lốc)</span>
+            <div class="prompt-box prompt-bad">
+                "Làm sao để học giỏi Toán lớp 9?"
+            </div>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">Kết quả: AI trả lời văn mẫu chung chung, áp dụng cho ai cũng được, không có ích lợi thực tế.</p>
+        </div>
+
+        <div>
+            <span class="badge badge-success">Chuẩn Xác (Prompt CTF)</span>
+            <div class="prompt-box prompt-good">
+                "[C] Tôi đang học khá Toán lớp 9 nhưng rất hay sai những bài Hình học không gian.<br><br>
+                [T] Hãy đóng vai một gia sư Toán khắt khe, phân tích 3 nguyên nhân khiến học sinh hay sai phần này và đưa ra cho tôi 3 mẹo khắc phục nhanh nhất.<br><br>
+                [F] Trình bày ngắn gọn bằng gạch đầu dòng, ngôn ngữ hiện đại không nhàm chán."
+            </div>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">Kết quả: AI trở thành chuyên gia giải quyết đúng "nỗi đau" Hình học không gian của Linh.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>4. Bài Tập Về Nhà: Viết "Siêu Prompt" (System Prompt)</h2>
+        <p style="margin-bottom: 1rem; color: var(--text-muted);">
+            File <code># 📝 Hồ sơ Cá nhân & Chỉ dẫn Trợ lý.md</code> mà em đang viết thực chất chính là một <strong>System Prompt</strong> (Siêu Prompt) quyết định cách AI Chatbot của em sẽ hoạt động sau này. Hãy áp dụng công thức CTF vào file đó:
+        </p>
+        <ul>
+            <li><strong>C - Context (Bối cảnh):</strong> Khai báo rõ trong file em là ai, tính cách thế nào, đam mê gì (Guitar, Game). AI sẽ dùng nó làm bộ nhớ gốc.</li>
+            <li><strong>T & F - Task & Format (Nhiệm vụ & Định dạng):</strong> Đặt ra "Luật" cho AI. Bắt buộc AI luôn phải trả lời ngắn gọn, đi thẳng vào vấn đề, không dạy đời và phải lấy ví dụ thực tế.</li>
+            <li><strong>Nhiệm vụ:</strong> Mở Obsidian, cập nhật lại phần "Chỉ dẫn Trợ lý" trong file Hồ sơ thật sắc bén, giống hệt như em đang ra lệnh cho một cỗ máy.</li>
+        </ul>
+    </div>
+
+    <button class="btn-print" onclick="window.print()">
+        <svg style="width:24px;height:24px;margin-right:10px;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+        Lưu Thành PDF (In Giáo Trình)
+    </button>
+</div>
+
+</body>
+</html>

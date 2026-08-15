@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#040712">
+  <title>Private AI Coach — Từ Người Tiêu Thụ Đến Người Chỉ Huy Công Nghệ</title>
+  <meta name="description" content="Chương trình huấn luyện cá nhân 1-kèm-1 may đo: Chuyển thời gian dùng thiết bị từ tiêu thụ thụ động thành sáng tạo công nghệ, làm chủ Vibe Coding và tăng tốc học tập.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Scroll Progress Bar -->
+  <div id="progress" aria-hidden="true"></div>
+
+  <!-- Noise Texture Overlay -->
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- Floating Ambient Orbs -->
+  <div class="orb orb1" aria-hidden="true"></div>
+  <div class="orb orb2" aria-hidden="true"></div>
+
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="#" class="brand">
+        <div class="brand-mark">
+          <i class="fa-solid fa-brain"></i>
+        </div>
+        <span class="brand-text">AI NATIVE <strong>HUB</strong></span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#objections">Giải Mã Nỗi Lo</a>
+        <a href="#pillars">4 Trụ Cột</a>
+        <a href="#comparison">So Sánh</a>
+        <a href="#packages">Gói May Đo</a>
+        <a href="#faq">Hỏi Đáp</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="https://zalo.me" target="_blank" class="btn-nav-zalo">
+          <i class="fa-solid fa-comment-dots"></i> Zalo Coach
+        </a>
+        <a href="#register" class="btn-nav-cta">
+          Đặt Lịch 1-1
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <div class="hero-grid-bg" aria-hidden="true"></div>
+    <div class="container">
+      
+      <div class="hero-top">
+        <div class="eyebrow">
+          <i class="pulse-dot"></i>
+          <span>BESPOKE PRIVATE COACHING • KÈM 1-1 MAY ĐO</span>
+        </div>
+
+        <h1>
+          Từ <span class="danger-strike">Người Tiêu Thụ Thiết Bị</span><br>
+          Thành <span class="grad-gold">Người Chỉ Huy Công Nghệ</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Chương trình huấn luyện cá nhân thực chiến dành riêng cho học sinh <strong>Cấp 2 (THCS) & Cấp 3 (THPT)</strong>. Chuyển hóa thời gian màn hình thành năng lực lập trình <strong>Vibe Coding</strong>, tư duy phản biện và tự động hóa học tập.
+        </p>
+
+        <div class="hero-pills">
+          <span class="pill gold"><i class="fa-solid fa-gem"></i> 100% Có Sản Phẩm Chạy Thật</span>
+          <span class="pill em"><i class="fa-solid fa-shield-halved"></i> Đã Bao Gồm Bản Quyền AI Pro</span>
+          <span class="pill cy"><i class="fa-solid fa-chart-line"></i> Báo Cáo Tiến Độ Mỗi 4 Buổi</span>
+        </div>
+      </div>
+
+      <!-- Parent Reassurance Quote Banner -->
+      <div class="hero-quote">
+        <div class="q-mark">“</div>
+        <p class="quote-text">
+          "Cấm đoán công nghệ là cách nhanh nhất biến con thành người tụt hậu. <strong>Dạy con làm chủ và chỉ huy công nghệ</strong> là bệ phóng vững chắc nhất cho tương lai."
+        </p>
+      </div>
+
+      <!-- INTERACTIVE STAGE & FLYWHEEL ENGINE -->
+      <div class="hero-visual">
+        <div class="trinity-stage">
+          <div class="stage-grid"></div>
+          <div class="stage-glow"></div>
+
+          <div class="tri-engine">
+            <svg class="tri-svg" viewBox="0 0 360 360" fill="none">
+              <circle cx="180" cy="180" r="118" stroke="rgba(255,255,255,.08)" stroke-dasharray="4 8"/>
+              <circle cx="180" cy="180" r="88" stroke="rgba(255,255,255,.06)" stroke-dasharray="2 10"/>
+              <path id="triPath" d="M180 56 L 62 277 L 298 277 Z" stroke="url(#gTri)" stroke-width="1.8" stroke-linejoin="round" opacity=".9"/>
+              <defs>
+                <linearGradient id="gTri" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#FACC15"/>
+                  <stop offset="50%" stop-color="#22D3EE"/>
+                  <stop offset="100%" stop-color="#10B981"/>
+                </linearGradient>
+              </defs>
+              <circle r="3.2" fill="#FACC15"><animateMotion dur="6s" repeatCount="indefinite" rotate="auto"><mpath href="#triPath"/></animateMotion></circle>
+              <circle r="2.8" fill="#22D3EE"><animateMotion dur="6s" repeatCount="indefinite" begin="2s" rotate="auto"><mpath href="#triPath"/></animateMotion></circle>
+              <circle r="2.8" fill="#10B981"><animateMotion dur="6s" repeatCount="indefinite" begin="4s" rotate="auto"><mpath href="#triPath"/></animateMotion></circle>
+            </svg>
+
+            <!-- NODE A -->
+            <div class="node a">
+              <div class="node-card">
+                <div class="node-icon"><i class="fa-solid fa-terminal"></i></div>
+                <kbd>Pillar 1</kbd>
+                <h4>Tư Duy Chỉ Huy</h4>
+              </div>
+            </div>
+
+            <!-- NODE B -->
+            <div class="node b">
+              <div class="node-card">
+                <div class="node-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                <kbd>Pillar 2</kbd>
+                <h4>Vibe Coding</h4>
+              </div>
+            </div>
+
+            <!-- NODE C -->
+            <div class="node c">
+              <div class="node-card">
+                <div class="node-icon"><i class="fa-solid fa-database"></i></div>
+                <kbd>Pillar 3</kbd>
+                <h4>Second Brain</h4>
+              </div>
+            </div>
+
+            <!-- CENTER -->
+            <div class="tri-center">
+              <small>COACHING</small>
+              <strong>1-on-1</strong>
+              <span>Bespoke OS</span>
+            </div>
+          </div>
+
+          <!-- TICKER -->
+          <div class="ticker">
+            <div class="ticker-track">
+              <span class="chip"><i style="color:var(--gold)"></i> 100% Sản Phẩm Chạy Thật</span>
+              <span class="chip"><i style="color:var(--cyan)"></i> Vibe Coding Native</span>
+              <span class="chip"><i style="color:var(--emerald2)"></i> Trọn Gói Bản Quyền AI Pro</span>
+              <span class="chip"><i style="color:var(--gold)"></i> AI Socratic Khai Vấn</span>
+              <span class="chip"><i style="color:var(--cyan)"></i> Second Brain Obsidian</span>
+              <span class="chip"><i style="color:var(--emerald2)"></i> Kỷ Luật Số Toàn Diện</span>
+              <span class="chip"><i style="color:var(--gold)"></i> 100% Sản Phẩm Chạy Thật</span>
+              <span class="chip"><i style="color:var(--cyan)"></i> Vibe Coding Native</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SIDE CARD -->
+        <div class="hero-side">
+          <div class="side-card">
+            <h3><i>◈</i> Vì sao mô hình May Đo 1-1 chiến thắng?</h3>
+            <p>
+              Khóa học đại trà 30–50 người không thể giải quyết lỗi kỹ thuật riêng của từng học sinh. Mô hình <strong>Private Mentor 1-kèm-1</strong> may đo giáo án chính xác theo sở thích (Âm nhạc, cờ vua, game, ngoại ngữ) để tạo ra sản phẩm hoàn chỉnh.
+            </p>
+            <ul>
+              <li><strong>Không học vẹt cú pháp</strong> — Học tư duy Kiến trúc sư & Giám đốc dự án.</li>
+              <li><strong>Gia sư riêng 24/7</strong> — Gỡ mọi nút thắt bài vở ngay khi gặp khó khăn.</li>
+              <li><strong>Báo cáo minh bạch</strong> — Phụ huynh nắm rõ tiến độ sau mỗi 4 buổi.</li>
+            </ul>
+            <div class="cta-row">
+              <a href="#register" class="btn btn-primary"><i class="fa-solid fa-calendar-check"></i> Đặt Lịch Chẩn Đoán 1-1</a>
+              <a href="#objections" class="btn btn-ghost">Xem Nỗi Lo Phụ Huynh →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- SECTION: OBJECTIONS & PAIN POINT RESOLUTION -->
+  <section id="objections" class="section objections-section">
+    <div class="container">
+      <div class="sec-head">
+        <div class="k-label">GIẢI MÃ NỖI LO PHỤ HUYNH</div>
+        <h2>2 Nỗi Sợ Lớn Nhất Của Cha Mẹ Khi Con Dùng AI</h2>
+        <p>Chúng tôi thấu hiểu những băn khoăn của phụ huynh và áp dụng phương pháp sư phạm chuyển hóa tư duy bài bản.</p>
+      </div>
+
+      <div class="objection-grid">
+        <!-- CARD 1 -->
+        <div class="o-card">
+          <div class="o-badge"><i class="fa-solid fa-triangle-exclamation"></i> NỖI LO #1</div>
+          <h3 class="o-fear">"Sợ con nghiện AI như nghiện game, cắm mặt vào màn hình cả ngày?"</h3>
+          <div class="o-divider"></div>
+          <div class="o-solution">
+            <div class="o-solution-header">
+              <i class="fa-solid fa-circle-check"></i>
+              <h4>Giải Pháp: Chuyển Sang "Creator Mode"</h4>
+            </div>
+            <p>
+              Trẻ nghiện màn hình vì ở vai trò <strong>"Người tiêu thụ thụ động"</strong>. Khóa học chuyển hóa 100% thời gian thiết bị sang <strong>"Nhà sáng tạo chủ động"</strong>: Con dùng AI để làm kịch bản video, tự viết ứng dụng web và chatbot theo sở thích. Khi tự làm ra sản phẩm thật, con sẽ nhìn công nghệ với tư duy của một <strong>Kỹ sư / Nhà sáng lập</strong> thay vì chỉ chơi game vô bổ.
+            </p>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="o-card">
+          <div class="o-badge"><i class="fa-solid fa-triangle-exclamation"></i> NỖI LO #2</div>
+          <h3 class="o-fear">"Cái gì cũng hỏi AI thì con có bị lười suy nghĩ, bị 'ngu đi' không?"</h3>
+          <div class="o-divider"></div>
+          <div class="o-solution">
+            <div class="o-solution-header">
+              <i class="fa-solid fa-circle-check"></i>
+              <h4>Giải Pháp: Phương Pháp Socratic AI</h4>
+            </div>
+            <p>
+              Dùng AI để "chép bài giải mẫu" là cách dùng của người thiếu phương pháp. Coach rèn luyện cho con phương pháp <strong>Khai vấn Socratic & Tư duy phản biện</strong>:
+            </p>
+            <ul>
+              <li><strong>Tư duy chỉ huy:</strong> Bóc tách bài toán và đặt yêu cầu chuẩn xác (Prompting).</li>
+              <li><strong>Làm thẩm phán:</strong> Phản biện, kiểm chứng nguồn tin và bắt lỗi sai logic của AI.</li>
+              <li><strong>Gia sư 24/7:</strong> AI đặt câu hỏi gợi mở để kích thích con tự đào sâu bản chất bài học.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: 4 PILLARS -->
+  <section id="pillars" class="section pillars-section">
+    <div class="container">
+      <div class="sec-head">
+        <div class="k-label">NĂNG LỰC SỐ THỜI ĐẠI MỚI</div>
+        <h2>4 Trụ Cột Con Sẽ Nắm Vững Sau Khóa Học</h2>
+        <p>Mỗi buổi học đều gắn liền với bài tập thực tế và sản phẩm hoàn chỉnh chạy được ngay.</p>
+      </div>
+
+      <div class="pillars-grid">
+        <div class="p-card gold">
+          <div class="p-icon-box"><i class="fa-solid fa-terminal"></i></div>
+          <div class="p-tag">Trụ Cột 01</div>
+          <h3>Tư Duy Chỉ Huy</h3>
+          <p>Rèn luyện kỹ năng diễn đạt gãy gọn, tư duy logic và cấu trúc yêu cầu để điều khiển các hệ thống AI tiên tiến nhất.</p>
+        </div>
+
+        <div class="p-card cy">
+          <div class="p-icon-box"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <div class="p-tag">Trụ Cột 02</div>
+          <h3>Lập Trình Vibe Coding</h3>
+          <p>Đóng vai trò Giám đốc sản phẩm: dùng ngôn ngữ tự nhiên để AI tự động lập trình Website, Chatbot và Mini-game.</p>
+        </div>
+
+        <div class="p-card em">
+          <div class="p-icon-box"><i class="fa-solid fa-database"></i></div>
+          <div class="p-tag">Trụ Cột 03</div>
+          <h3>Bộ Não Thứ Hai</h3>
+          <p>Xây dựng hệ thống Second Brain (Obsidian/Notion), rèn luyện thói quen kỷ luật số, tự lập kế hoạch học tập.</p>
+        </div>
+
+        <div class="p-card vt">
+          <div class="p-icon-box"><i class="fa-solid fa-bolt"></i></div>
+          <div class="p-tag">Trụ Cột 04</div>
+          <h3>Tăng Tốc Học Tập x3</h3>
+          <p>Dùng AI tóm tắt bài giảng, vẽ sơ đồ tư duy, giải đề luyện thi vào 10/THPT và luyện nói Ngoại ngữ 1-1 không giới hạn.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: COMPARISON TABLE -->
+  <section id="comparison" class="section">
+    <div class="container">
+      <div class="sec-head">
+        <div class="k-label">BẢNG ĐỐI CHIẾU GIÁ TRỊ</div>
+        <h2>Khóa Học Đại Trà <em>vs.</em> Private AI Coach May Đo</h2>
+        <p>Sự khác biệt cốt lõi tạo nên hiệu quả vượt trội cho học sinh.</p>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Tiêu Chí So Sánh</th>
+              <th class="th-mass">Khóa Học Đại Trà (30–50 bạn)</th>
+              <th class="th-bespoke">Private AI Coach 1-Kèm-1</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Giáo trình & Bài tập</strong></td>
+              <td>Dập khuôn một bài cho tất cả</td>
+              <td class="td-bespoke">May đo 100% theo sở thích & mục tiêu của con</td>
+            </tr>
+            <tr>
+              <td><strong>Khi gặp lỗi kỹ thuật</strong></td>
+              <td>Tự mày mò hoặc bị bỏ rơi</td>
+              <td class="td-bespoke">Mentor gỡ lỗi và unblock ngay tại chỗ</td>
+            </tr>
+            <tr>
+              <td><strong>Sản phẩm đầu ra</strong></td>
+              <td>Lý thuyết, chứng chỉ hình thức</td>
+              <td class="td-bespoke">100% có Web App / Kênh video chạy thật</td>
+            </tr>
+            <tr>
+              <td><strong>Chi phí bản quyền AI</strong></td>
+              <td>Tự mua thêm tốn kém</td>
+              <td class="td-bespoke">Đã bao gồm trọn gói tài khoản bản quyền Pro</td>
+            </tr>
+            <tr>
+              <td><strong>Báo cáo cho cha mẹ</strong></td>
+              <td>Không có hoặc rất sơ sài</td>
+              <td class="td-bespoke">Báo cáo phân tích chi tiết sau mỗi 4 buổi</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: PACKAGES -->
+  <section id="packages" class="section packages-section">
+    <div class="container">
+      <div class="sec-head">
+        <div class="k-label">LỘ TRÌNH ĐẦU TƯ</div>
+        <h2>Các Gói Huấn Luyện May Đo 1-Kèm-1</h2>
+        <p>
+          <em>* Học phí đã bao gồm trọn gói chi phí tài khoản bản quyền các hệ thống AI chuyên nghiệp trong suốt lộ trình. Gia đình không phải chi trả thêm bất kỳ khoản phí phần mềm phát sinh nào.</em>
+        </p>
+      </div>
+
+      <div class="packages-grid">
+        <!-- GÓI 1 -->
+        <div class="pkg-card">
+          <div class="pkg-head">
+            <span class="pkg-dur">1 THÁNG (8 BUỔI)</span>
+            <h3 class="pkg-name">Gói Khởi Động</h3>
+            <p class="pkg-desc">Nền tảng tư duy & Kỷ luật số</p>
+          </div>
+          <div class="pkg-features">
+            <div class="pkg-item"><i class="fa-solid fa-check"></i> 8 buổi huấn luyện 1-1 (90 phút/buổi)</div>
+            <div class="pkg-item"><i class="fa-solid fa-check"></i> Thiết lập "Second Brain" & Kỷ luật số</div>
+            <div class="pkg-item"><i class="fa-solid fa-check"></i> Làm chủ AI hình ảnh, âm thanh, video</div>
+            <div class="pkg-item"><i class="fa-solid fa-check"></i> <strong>Đầu ra:</strong> 01 Kênh nội dung / Video hoàn chỉnh</div>
+            <div class="pkg-item"><i class="fa-solid fa-check"></i> Báo cáo đánh giá tiến độ sau mỗi 4 buổi</div>
+          </div>
+          <div class="pkg-footer">
+            <a href="#register" class="btn btn-ghost">Chọn Gói Khởi Động</a>
+          </div>
+        </div>
+
+        <!-- GÓI 2 (POPULAR) -->
+        <div class="pkg-card popular">
+          <div class="pkg-ribbon">⭐ KHUYÊN DÙNG</div>
+          <div class="pkg-head">
+            <span class="pkg-dur">2 THÁNG (16 BUỔI)</span>
+            <h3 class="pkg-name">Gói Kiến Tạo</h3>
+            <p class="pkg-desc">Làm chủ Vibe Coding & Web App</p>
+          </div>
+          <div class="pkg-features">
+            <div class="pkg-item"><i class="fa-solid fa-check"></i> <strong>Bao gồm toàn bộ quyền lợi Gói 1</strong></div>
+            <div class="pkg-item"><i class="fa-solid fa-check"></i> 16 buổi huấn luyện 1-1 chuyên sâu</div>
+            <div class="pkg-item"><i class="fa-solid fa-check"></i> Tư duy Vibe Coding & Kiến trúc sư phần mềm</div>
+            <div class="pkg-item"><i class="fa-solid fa-check"></i> <strong>Đầu ra:</strong> 01 Web App / Chatbot chạy thật trên Internet</div>
+            <div class="pkg-item"><i class="fa-solid fa-check"></i> Buổi báo cáo Demo Day tốt nghiệp với gia đình</div>
+          </div>
+          <div class="pkg-footer">
+            <a href="#register" class="btn btn-primary">Chọn Gói Kiến Tạo</a>
+          </div>
+        </div>
+
+        <!-- GÓI 3 -->
+        <div class="pkg-card">
+          <div class="pkg-head">
+            <span class="pkg-dur">3 THÁNG (24 BUỔI)</span>
+            <h3 class="pkg-name">Gói Bứt Phá</h3>
+            <p class="pkg-desc">Toàn diện & Luyện thi bứt phá</p>
+          </div>
+          <div class="pkg-features">
+            <div class="pkg-item"><i class="fa-solid fa-check"></i> <strong>Toàn bộ quyền lợi Gói 1 & Gói 2</strong></div>
+            <div class="pkg-item"><i class="fa-solid fa-check"></i> 24 buổi huấn luyện 1-1 toàn diện</div>
+            <div class="pkg-item"><i class="fa-solid fa-check"></i> Tích hợp sâu vào chương trình thi lớp 10/THPT</div>
+            <div class="pkg-item"><i class="fa-solid fa-check"></i> Xây dựng Portfolio công nghệ săn học bổng</div>
+            <div class="pkg-item"><i class="fa-solid fa-check"></i> Hỗ trợ kỹ thuật và kèm cặp dài hạn 24/7</div>
+          </div>
+          <div class="pkg-footer">
+            <a href="#register" class="btn btn-ghost">Chọn Gói Bứt Phá</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: FAQ -->
+  <section id="faq" class="section">
+    <div class="container">
+      <div class="sec-head">
+        <div class="k-label">HỎI ĐÁP PHỤ HUYNH</div>
+        <h2>Câu Hỏi Thường Gặp</h2>
+      </div>
+
+      <div class="faq-wrap">
+        <div class="faq-item active">
+          <button class="faq-q">
+            <span>Con chưa biết lập trình hoặc dốt công nghệ có học được không?</span>
+            <i class="fa-solid fa-chevron-down faq-arr"></i>
+          </button>
+          <div class="faq-a">
+            <p><strong>Hoàn toàn học được!</strong> Khóa học áp dụng phương pháp <strong>Vibe Coding</strong> tiên tiến: con không cần học nhớ cú pháp code mà dùng chính ngôn ngữ tự nhiên để điều khiển AI tự viết code. Trọng tâm là rèn luyện <strong>Tư duy logic & Ý tưởng sáng tạo</strong> của con.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">
+            <span>Hình thức học là Online hay Trực tiếp?</span>
+            <i class="fa-solid fa-chevron-down faq-arr"></i>
+          </button>
+          <div class="faq-a">
+            <p>Chương trình được thiết kế linh hoạt: có thể học <strong>Online 1-1 qua Google Meet/Zoom</strong> (có chia sẻ màn hình và điều khiển sửa lỗi trực tiếp) hoặc <strong>Trực tiếp tại nhà / văn phòng</strong> tùy theo vị trí địa lý và thỏa thuận giữa Coach và gia đình.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">
+            <span>Nếu con bận lịch học thêm đột xuất thì có được bù không?</span>
+            <i class="fa-solid fa-chevron-down faq-arr"></i>
+          </button>
+          <div class="faq-a">
+            <p>Vì là mô hình <strong>1-kèm-1 may đo cá nhân</strong>, lịch học được sắp xếp linh hoạt theo thời khóa biểu của con. Gia đình chỉ cần báo trước tối thiểu 6 tiếng là sẽ được dời và học bù sang buổi khác mà không bị mất buổi.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">
+            <span>Gia đình có phải mua thêm tài khoản phần mềm AI nào không?</span>
+            <i class="fa-solid fa-chevron-down faq-arr"></i>
+          </button>
+          <div class="faq-a">
+            <p><strong>Không!</strong> Học phí đã bao gồm trọn gói chi phí tài khoản bản quyền các công cụ AI chuyên nghiệp cần thiết trong suốt khóa học. Coach sẽ trực tiếp cài đặt và cấu hình sẵn trên máy tính của con.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: REGISTER / DISCOVERY -->
+  <section id="register" class="section register-section">
+    <div class="container">
+      <div class="register-grid">
+        <div class="reg-info">
+          <div class="k-label">SUẤT THỬ NGHIỆM ĐẶC QUYỀN</div>
+          <h2>Đăng Ký Buổi "Chẩn Đoán Năng Lực Số" 1-1 Miễn Phí</h2>
+          <p>
+            Dành 30 phút trò chuyện trực tiếp cùng Coach để đánh giá thực trạng sử dụng thiết bị của con và nhận lộ trình may đo riêng hoàn toàn miễn phí.
+          </p>
+
+          <div class="reg-perks">
+            <div class="r-perk"><i class="fa-solid fa-circle-check"></i> Đánh giá mức độ phụ thuộc thiết bị & năng lực số của con</div>
+            <div class="r-perk"><i class="fa-solid fa-circle-check"></i> Gợi ý 3 ứng dụng AI giúp con tăng tốc môn học yêu thích ngay hôm nay</div>
+            <div class="r-perk"><i class="fa-solid fa-circle-check"></i> Nhận bản kế hoạch lộ trình 1-1 may đo theo đúng sở thích của con</div>
+          </div>
+        </div>
+
+        <div class="reg-card">
+          <h3>Điền Thông Tin Nhận Tư Vấn</h3>
+          <form id="discoveryForm" class="reg-form">
+            <div class="f-group">
+              <label for="parentName">Họ & Tên Phụ Huynh *</label>
+              <input type="text" id="parentName" placeholder="Ví dụ: Nguyễn Văn A" required>
+            </div>
+
+            <div class="f-group">
+              <label for="parentPhone">Số Điện Thoại / Zalo *</label>
+              <input type="tel" id="parentPhone" placeholder="Ví dụ: 0912 345 678" required>
+            </div>
+
+            <div class="f-group">
+              <label for="studentGrade">Con đang học lớp mấy?</label>
+              <select id="studentGrade">
+                <option value="grade6_8">Cấp 2: Lớp 6 - Lớp 8</option>
+                <option value="grade9">Cấp 2: Lớp 9 (Luyện thi vào 10)</option>
+                <option value="grade10_11">Cấp 3: Lớp 10 - Lớp 11</option>
+                <option value="grade12">Cấp 3: Lớp 12 (Luyện thi THPT / Du học)</option>
+              </select>
+            </div>
+
+            <div class="f-group">
+              <label for="parentConcern">Mục tiêu cha mẹ mong muốn nhất cho con:</label>
+              <textarea id="parentConcern" rows="3" placeholder="Ví dụ: Cai nghiện game, học Vibe Coding làm web, hoặc dùng AI ôn thi..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-submit">
+              <i class="fa-solid fa-paper-plane"></i> Gửi Yêu Cầu Tư Vấn 1-1
+            </button>
+            <p class="f-note"><i class="fa-solid fa-lock"></i> Thông tin được bảo mật 100% chỉ dùng để hẹn lịch tư vấn.</p>
+          </form>
+
+          <div id="formSuccess" class="reg-success hidden">
+            <i class="fa-solid fa-circle-check"></i>
+            <h4>Đăng Ký Thành Công!</h4>
+            <p>Coach đã nhận được thông tin và sẽ liên hệ qua Zalo/Điện thoại với anh/chị trong vòng <strong>2 giờ làm việc</strong>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="brand">
+        <div class="brand-mark">
+          <i class="fa-solid fa-brain"></i>
+        </div>
+        <span class="brand-text">AI NATIVE <strong>HUB</strong></span>
+      </div>
+      <p>Chương trình Private AI Coach — Huấn Luyện Năng Lực Số & Vibe Coding 1-kèm-1 Thực Chiến</p>
+      <div class="footer-bottom">
+        © 2026 AI Native Hub. Bản quyền thuộc về chương trình Bespoke Private AI Coaching.
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE STICKY BOTTOM BAR -->
+  <div class="mobile-bar">
+    <a href="https://zalo.me" target="_blank" class="m-btn m-zalo">
+      <i class="fa-solid fa-comment-dots"></i> Nhắn Zalo
+    </a>
+    <a href="#register" class="m-btn m-cta">
+      <i class="fa-solid fa-calendar-check"></i> Đặt Lịch 1-1
+    </a>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
