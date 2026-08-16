@@ -8,6 +8,10 @@
 ## 🧭 I. TỔNG QUAN & VAI TRÒ CHIẾN LƯỢC
 **AI Native Hub** là một hệ sinh thái huấn luyện công nghệ đa tầng, vừa đóng vai trò tạo dòng tiền thực tế qua các chương trình **Bespoke Private Mentorship 1-kèm-1**, vừa là **vườn ươm tài năng ngầm (Stealth Talent Incubator)** cho đại dự án **Project TRINITY** (Hệ sinh thái Deep-Tech Quốc gia Kỹ thuật số: AI — Năng lượng — Bảo mật Lượng tử).
 
+> [!CAUTION]
+> **QUY TẮC BẢO MẬT TUYỆT MẬT (STEALTH DIRECTIVE):**
+> Tuyệt đối KHÔNG BAO GIỜ được phép nhắc đến tên "Project Trinity" trên bất kỳ website công khai, sản phẩm, bài viết truyền thông hay tài liệu đối ngoại nào của AI Native Hub. Mọi hoạt động của AI Native Hub phải hoàn toàn xuất hiện dưới vỏ bọc một tổ chức huấn luyện & cố vấn công nghệ độc lập.
+
 Mô hình hoạt động dựa trên cơ chế: **Đào tạo thực chiến May đo $\rightarrow$ Giải phóng năng suất $\rightarrow$ Sàng lọc Top 5% tinh hoa (RLHF Experts & Co-founders).**
 
 ---

@@ -16,6 +16,9 @@
    * Triết lý giáo dục: Tham chiếu `1_Business_Operations/Philosophy/tuoc.md`.
    * Quy chuẩn thiết kế & Copywriting: Tham chiếu `4_Media_And_Content/Website_Content/`.
    * Kiến trúc kỹ thuật: Tham chiếu `3_Tech_And_Automations/`.
+4. **QUY TẮC BẢO MẬT ĐỎ (STEALTH DIRECTIVE - TUYỆT ĐỐI TUÂN THỦ):**
+   * **TUYỆT ĐỐI KHÔNG BAO GIỜ** được phép nhắc đến các từ khóa như `Project Trinity`, `Trinity`, hay bất kỳ tên mã dự án vĩ mô nào trên các website công khai (HTML/CSS/JS), tài liệu marketing, bài viết truyền thông của AI Native Hub.
+   * AI Native Hub phải hoàn toàn xuất hiện dưới vỏ bọc một đơn vị huấn luyện công nghệ độc lập và kín tiếng. Mọi liên kết với dự án lớn chỉ được lưu trữ nội bộ trong thư mục `1_Business_Operations/Talent_Incubator_Registry/`.
 
 ---
 
