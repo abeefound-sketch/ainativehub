@@ -10,3 +10,4 @@ dist/
 # Google Cloud Service Account Keys
 *.json
 !package.json
+*.zip

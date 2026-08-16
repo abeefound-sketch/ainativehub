@@ -1,0 +1,28 @@
+name: 🚀 Deploy AI Atelier to cPanel Hosting
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'sites/site-01-k12-creator/**'
+      - '.github/workflows/deploy.yml'
+  workflow_dispatch:
+
+jobs:
+  web-deploy:
+    name: 🎉 Sync to atelier.gipted.com
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v4
+
+      - name: 📂 Sync files to cPanel via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER || 'gipted.com' }}
+          username: ${{ secrets.FTP_USERNAME || 'sdgiptedcom' }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./sites/site-01-k12-creator/
+          server-dir: ./atelier.gipted.com/
+          dangerous-clean-slate: false
