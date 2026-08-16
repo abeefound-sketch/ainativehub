@@ -10,11 +10,13 @@ from google.oauth2.service_account import Credentials
 # AI NATIVE HUB — HỆ THỐNG TỰ ĐỘNG ĐỒNG BỘ LEADS & MAY ĐO HỒ SƠ HỌC VIÊN
 # ==============================================================================
 
-# Dùng đường dẫn tương đối so với vị trí hiện tại của script (Automations/)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-CREDENTIALS_FILE = os.path.join(BASE_DIR, "ainativehub-4e06928576b5.json")
+# Tự động định vị thư mục gốc của repository (root)
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+ROOT_DIR = os.path.abspath(os.path.join(SCRIPT_DIR, "../../")) if "Automations" in SCRIPT_DIR else os.path.abspath(".")
+
+CREDENTIALS_FILE = os.path.join(ROOT_DIR, "ainativehub-4e06928576b5.json")
 SPREADSHEET_ID = "18fgBwb1GSrS35PM3U2EsOFVxroazZirLnctlRauCeHE"
-LEADS_DATA_DIR = os.path.join(BASE_DIR, "1_Business_Operations", "Sales_And_CRM", "Leads")
+LEADS_DATA_DIR = os.path.join(ROOT_DIR, "1_Business_Operations", "Sales_And_CRM", "Leads")
 
 SCOPES = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -27,7 +29,7 @@ def sanitize_filename(name):
 
 def get_service_account_client():
     if not os.path.exists(CREDENTIALS_FILE):
-        print(f"❌ Không tìm thấy file {CREDENTIALS_FILE} trong thư mục dự án.")
+        print(f"❌ Không tìm thấy file key {CREDENTIALS_FILE} trong thư mục gốc.")
         sys.exit(1)
         
     creds = Credentials.from_service_account_file(CREDENTIALS_FILE, scopes=SCOPES)
